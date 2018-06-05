@@ -1,4 +1,9 @@
 "use strict";
+
+// Hack to work around problem with node process version
+if (process.version == '' || process.version == null) {
+  process.version = '10';
+}
 var __importStar = (this && this.__importStar) || function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
